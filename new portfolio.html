@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Rahul Sampath</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Configure Tailwind to use Inter font */
+    :root {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    /* Utility class for screen reader only text (improves contact form accessibility) */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-900 text-gray-100 antialiased">
+  <nav class="bg-gray-800 shadow-xl shadow-red-500/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-500 hover:text-red-400 transition">My Portfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="text-gray-200 hover:text-red-500 transition font-medium">Home</a></li>
+        <li><a href="#about" class="text-gray-200 hover:text-red-500 transition font-medium">About</a></li>
+        <li><a href="#projects" class="text-gray-200 hover:text-red-500 transition font-medium">Projects</a></li>
+        <li><a href="#contact" class="text-gray-200 hover:text-red-500 transition font-medium">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="flex flex-col items-center text-center py-24 px-4 bg-gray-900 border-b border-gray-700 min-h-screen justify-center">
+    <img 
+      src="Screenshot 2025-10-01 170618.png"
+      alt="Rahul Sampath Profile Picture"
+      class="rounded-full w-36 h-36 mb-6 ring-4 ring-red-500 ring-offset-4 ring-offset-gray-0 object-cover shadow-2xl"
+    >
+    <h2 class="text-6xl font-extrabold text-white mt-2 md:text-7xl">Hi, I'm <span class="text-red-500">Rahul Sampath</span></h2>
+    <p class="text-3xl text-red-400 font-light mt-4 tracking-wider">Web Developer & Designer</p>
+    <p class="mt-6 text-gray-400 italic max-w-xl text-lg">
+      "Turning ideas into reality with clean, efficient, and visually appealing code. Dedicated to building accessible and performant digital experiences."
+    </p>
+    
+    <a 
+      href="rahul_sampath_resume.pdf" 
+      download="Rahul_Sampath_Resume"
+      class="mt-10 bg-red-600 text-white px-10 py-4 rounded-xl shadow-lg shadow-red-500/30 hover:bg-red-700 transition duration-300 transform hover:scale-105 font-bold uppercase tracking-wider"
+    >
+      Download Resume
+    </a>
+  </section>
+
+  <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-white inline-block pb-2 border-b-4 border-red-500">About Me</h2>
+    </div>
+    <p class="mb-12 text-xl text-gray-300 leading-relaxed text-center">
+      I am a passionate web developer with a background in computer science. I love building interactive and visually appealing web applications, specializing in the modern front-end stack. I enjoy solving complex problems and continuously learning new technologies to stay ahead in the industry.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-red-500/20 transition duration-500 border-t-8 border-red-500">
+        <h3 class="text-3xl font-bold mb-6 text-white flex items-center">
+          <span class="text-red-500 mr-3">🛠️</span> Key Skills
+        </h3>
+        <ul class="grid grid-cols-2 gap-y-3 text-lg text-gray-300">
+          <li><span class="text-red-400">•</span> HTML5 & Semantic Markup</li>
+          <li><span class="text-red-400">•</span> CSS3 (Flexbox/Grid)</li>
+          <li><span class="text-red-400">•</span> JavaScript (ES6+)</li>
+          <li><span class="text-red-400">•</span> Tailwind CSS</li>
+          <li><span class="text-red-400">•</span> Basic React/Vue</li>
+          <li><span class="text-red-400">•</span> Git/GitHub</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-red-500/20 transition duration-500 border-t-8 border-red-500">
+        <h3 class="text-3xl font-bold mb-6 text-white flex items-center">
+          <span class="text-red-500 mr-3">🎓</span> Education & Experience
+        </h3>
+        <dl class="text-lg text-gray-300 space-y-4">
+          <dt class="text-white font-bold">B.Sc. Computer Science</dt>
+          <dd>JCT COLLEGE OF ENGINEERING AND TECHNOLOGY (2022-2026)</dd>
+          
+          <dt class="text-white font-bold">Intern, Front-End Development</dt>
+          <dd>ABC Tech Solutions (Summer 2023)</dd>
+          
+          <dt class="text-white font-bold">Freelance Developer</dt>
+          <dd>Various Clients (2024-Present)</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 px-6 bg-gray-900 border-t border-gray-800">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-white inline-block pb-2 border-b-4 border-red-500">Recent Work</h2>
+      </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 rounded-xl shadow-2xl p-6 hover:shadow-red-500/20 hover:scale-[1.02] transition-all duration-500 border-t-4 border-gray-700">
+        <img src="https://placehold.co/400x250/1f2937/93c5fd?text=To-Do+App" alt="Screenshot of the To-Do App project" class="rounded-lg mb-5 object-cover w-full h-48 border border-gray-700">
+        <h3 class="text-2xl font-bold mb-2 text-white">Project One: To-Do App</h3>
+        <p class="text-md text-gray-400 mb-4">A responsive and highly functional to-do application built using native HTML, Tailwind CSS, and vanilla JS for efficient state management.</p>
+        <a href="#" class="text-red-400 text-lg font-medium hover:text-red-300 transition flex items-center group">
+          View GitHub
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-2xl p-6 hover:shadow-red-500/20 hover:scale-[1.02] transition-all duration-500 border-t-4 border-gray-700">
+        <img src="https://placehold.co/400x250/1f2937/93c5fd?text=Weather+App" alt="Screenshot of the Weather App project" class="rounded-lg mb-5 object-cover w-full h-48 border border-gray-700">
+        <h3 class="text-2xl font-bold mb-2 text-white">Project Two: Weather App</h3>
+        <p class="text-md text-gray-400 mb-4">A real-time weather application consuming a third-party API, featuring dynamic UI updates and beautifully styled with Tailwind CSS.</p>
+        <a href="#" class="text-red-400 text-lg font-medium hover:text-red-300 transition flex items-center group">
+          View GitHub
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-2xl p-6 hover:shadow-red-500/20 hover:scale-[1.02] transition-all duration-500 border-t-4 border-gray-700">
+        <img src="https://placehold.co/400x250/1f2937/93c5fd?text=Portfolio+Site" alt="Screenshot of the Portfolio Site project" class="rounded-lg mb-5 object-cover w-full h-48 border border-gray-700">
+        <h3 class="text-2xl font-bold mb-2 text-white">Project Three: Portfolio Site</h3>
+        <p class="text-md text-gray-400 mb-4">This very portfolio website, serving as a clean, dark-mode showcase of my front-end skills, responsiveness, and design eye.</p>
+        <a href="#" class="text-red-400 text-lg font-medium hover:text-red-300 transition flex items-center group">
+          View GitHub
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 px-6 max-w-3xl mx-auto border-t border-gray-800">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-white inline-block pb-2 border-b-4 border-red-500">Get In Touch</h2>
+      <p class="mt-4 text-xl text-gray-300">I'm currently open to new opportunities and collaborations. Let's build something great!</p>
+      </div>
+      
+    <div class="mb-12 text-center space-y-4">
+      <p class="text-xl text-gray-300 flex items-center justify-center">
+        <span class="text-red-500 text-2xl mr-3">📧</span> 
+        Email: <a href="mailto:your.email@example.com" class="text-red-400 hover:text-red-300 ml-2">rahulsam1982003@gmail.com</a>
+      </p>
+      <p class="text-xl text-gray-300 flex items-center justify-center">
+        <span class="text-red-500 text-2xl mr-3">📞</span> 
+        Phone: <a href="tel:+1234567890" class="text-red-400 hover:text-red-300 ml-2">+91 7708098517</a>
+      </p>
+    </div>
+
+    <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl shadow-red-500/10 border border-gray-700">
+      <div>
+        <label for="name" class="sr-only">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full border border-gray-600 bg-gray-700 text-gray-100 p-4 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" required>
+      </div>
+      
+      <div>
+        <label for="email" class="sr-only">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full border border-gray-600 bg-gray-700 text-gray-100 p-4 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" required>
+      </div>
+      
+      <div>
+        <label for="message" class="sr-only">Your Message</label>
+        <textarea 
+          id="message"
+          name="message"
+          placeholder="Your Message" 
+          rows="6" 
+          class="w-full border border-gray-600 bg-gray-700 text-gray-100 p-4 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition" 
+          required
+        ></textarea>
+      </div>
+      
+      <button 
+        type="submit" 
+        class="w-full bg-red-600 text-white font-bold py-4 rounded-lg shadow-xl shadow-red-500/30 hover:bg-red-700 transition duration-300 transform hover:scale-[1.01] uppercase tracking-wider"
+      >
+        Send Message
+      </button>
+    </form>
+    <p class="text-center mt-4 text-sm text-gray-500">
+      *Note: You must replace <code class="text-red-400">YOUR_FORM_SUBMISSION_ENDPOINT</code> with a service (like Formspree or Netlify Forms) to receive submissions.
+    </p>
+  </section>
+
+  <footer class="bg-gray-800 text-center py-8 border-t border-red-500/30 mt-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="text-gray-400 text-sm">© 2024 Rahul Sampath. All rights reserved.</p>
+      <div class="flex justify-center space-x-6 mt-4 text-xl">
+        <a href="https://github.com/[Your-Username]" target="_blank" class="text-gray-400 hover:text-red-500 transition hover:scale-110 transform">GitHub</a>
+        <a href="https://linkedin.com/in/[Your-Profile]" target="_blank" class="text-gray-400 hover:text-red-500 transition hover:scale-110 transform">LinkedIn</a>
+        <a href="https://x.com/[Your-Handle]" target="_blank" class="text-gray-400 hover:text-red-500 transition hover:scale-110 transform">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
